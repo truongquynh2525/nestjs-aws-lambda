@@ -19,5 +19,9 @@ module.exports = (options, webpack) => {
         },
       }),
     ],
+    output: {
+      ...options.output,
+      libraryTarget: 'commonjs2',
+    },
   }
 }
